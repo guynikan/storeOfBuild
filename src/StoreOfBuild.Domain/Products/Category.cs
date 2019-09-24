@@ -7,7 +7,7 @@ namespace StoreOfBuild.Domain.Products
         public string Name { get; set; }
 
 
-        private void ValidateNameAndSetName(string name)
+        private void ValidateAndSetName(string name)
         {
             DomainException.When(string.IsNullOrEmpty(name), "Name is required");
 
@@ -15,13 +15,13 @@ namespace StoreOfBuild.Domain.Products
         }
         public Category(string name)
         {
-            ValidateNameAndSetName(name);
+            ValidateAndSetName(name);
 
         }
 
         public void Update(string name){
 
-            ValidateNameAndSetName(name);
+            ValidateAndSetName(name);
         }
     }
 }

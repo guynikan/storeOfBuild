@@ -2250,11 +2250,6 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-jquery-validate@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/jquery-validate/-/jquery-validate-2.0.0.tgz#a9da9e56682627fc4fc5474cc1d10c268509c259"
-  integrity sha1-qdqeVmgmJ/xPxUdMwdEMJoUJwlk=
-
 jquery-validation-unobtrusive@^3.2.11:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/jquery-validation-unobtrusive/-/jquery-validation-unobtrusive-3.2.11.tgz#175ee46380385a0e33ed320f255fad321f68f9f5"
