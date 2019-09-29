@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using StoreOfBuild.Domain.Dtos;
 using StoreOfBuild.Web.Models;
 
 namespace StoreOfBuild.Web.Controllers
@@ -21,7 +22,7 @@ namespace StoreOfBuild.Web.Controllers
         }
 
         [HttpPost]
-         public IActionResult CreateOrEdit(int id)
+         public IActionResult CreateOrEdit(CategoryDto dto)
         {
             return View();
         }

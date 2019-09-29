@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StoreOfBuild.Data;
+using StoreOfBuild.Domain;
 
 namespace StoreOfBuild.DI
 {
@@ -11,6 +12,7 @@ namespace StoreOfBuild.DI
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connection));
+            services.AddSingleton(typeof(IRepository<>), typeof(Repository<>));
                 
         }
     }
