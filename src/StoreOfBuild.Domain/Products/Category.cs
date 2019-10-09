@@ -9,7 +9,7 @@ namespace StoreOfBuild.Domain.Products
         {
             DomainException.When(string.IsNullOrEmpty(name), "Name is required");
 
-            this.Name = name;
+            Name = name;
         }
         public Category(string name)
         {

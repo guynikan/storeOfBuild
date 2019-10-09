@@ -1,6 +1,6 @@
 namespace StoreOfBuild.Domain
 {
-    public interface IRepository<TEntity>
+    public interface IRepository<TEntity> 
     {
          TEntity GetById(int id);
 
